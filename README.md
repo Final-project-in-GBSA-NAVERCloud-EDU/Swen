@@ -98,8 +98,6 @@
 
 ## 📷 결과 화면 예시
 
-> (아래 스크린샷은 실제 구현된 결과를 캡쳐하여 삽입)
-
 <table>
     <tr>
        <td align="center" valign="top">

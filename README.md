@@ -91,21 +91,37 @@
 ---
 
 ## 🌐 서비스 아키텍처
-```
-[Android App]
-↓ REST API
-[Spring Boot Server]
-↓
-┌─────────────────────┐
-│ 1. 네이버 뉴스 API    │ → 뉴스 검색
-│ 2. HyperCLOVA X     │ → 스크립트 생성 + 임베딩
-│ 3. Clova Voice      │ → TTS 변환
-│ 4. RAG 추천 시스템   │ → 관련 뉴스 검색
-└─────────────────────┘
-↓
-[NCP Object Storage] → 음성 파일 저장
-[MySQL Vector DB]    → 뉴스 임베딩 저장
-```
+
+<img src="./k8s_arch.png" Width="720" alt="architecture" />
+
+---
+
+## 📷 결과 화면 예시
+
+> (아래 스크린샷은 실제 구현된 결과를 캡쳐하여 삽입)
+
+<table>
+    <tr>
+       <td align="center" valign="top">
+      <b>📲 소셜 로그인</b><br/>
+      <img src="./image/swen1.png" width="200"/>
+    </td>
+        <td align="center" valign="top">
+      <b>🏠 메인 페이지</b><br/>
+      <img src="./image/swen3.png" width="200"/>
+    </tr>
+  <tr>
+    </td>
+    <td align="center" valign="top">
+      <b>🔍 스크립트</b><br/>
+      <img src="./image/swen4.png" width="200"/>
+    </td>
+    <td align="center" valign="top">
+      <b>📝 기사 스크랩</b><br/>
+      <img src="./image/swen5.png" width="200"/>
+    </tr>
+</table>
+
 ---
 
 ## 📊 성과 및 차별점
